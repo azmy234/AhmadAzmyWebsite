@@ -51,7 +51,7 @@ const cardsContainerVariants = {
   visible: {
     transition: {
       staggerChildren: 0.15,
-      delayChildren: 0.4,
+      delayChildren: 0.7,
     },
   },
 };

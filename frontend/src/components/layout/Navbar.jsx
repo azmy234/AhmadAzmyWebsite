@@ -27,6 +27,7 @@ const Navbar = () => {
       <div className="text-3xl font-bold text-gray-900 dark:text-white">
         <a href="#home">
           Ahmad<span className="text-orange-500">Azmy</span>
+          <span className="text-white text-2xl">.site</span>
         </a>
       </div>
 
