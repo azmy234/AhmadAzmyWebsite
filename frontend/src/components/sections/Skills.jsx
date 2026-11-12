@@ -10,7 +10,7 @@ import {
   faGitAlt,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiTailwindcss } from "react-icons/si";
 
 const skills = [
   {
@@ -47,6 +47,11 @@ const skills = [
     name: "Git",
     icon: <FontAwesomeIcon icon={faGitAlt} />,
     color: "text-orange-600",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss />,
+    color: "text-cyan-500",
   },
   {
     name: "Bootstrap",
