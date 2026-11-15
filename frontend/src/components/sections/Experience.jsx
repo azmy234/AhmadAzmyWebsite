@@ -54,6 +54,43 @@ const Experience = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
         >
+          {/* Front-End Developer - TopazSmart */}
+          <motion.div variants={itemVariants} className="relative mb-10">
+            <motion.span
+              className="absolute -left-10.25 top-1 h-5 w-5 rounded-full border-4 border-white bg-orange-500 dark:border-gray-900"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+            />
+
+            <motion.div
+              whileHover={{ y: -4, x: 3 }}
+              transition={{ duration: 0.2 }}
+              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors duration-300 hover:border-orange-200 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:hover:border-orange-500/40"
+            >
+              <div className="mb-2 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  Front-End Developer
+                </h3>
+
+                <span className="text-sm font-medium text-orange-500">
+                  Nov 2026 - Present
+                </span>
+              </div>
+
+              <p className="mb-3 font-medium text-gray-600 dark:text-gray-300">
+                TopazSmart
+              </p>
+
+              <p className="leading-7 text-gray-500 dark:text-gray-400">
+                Working on frontend development, building and maintaining modern
+                web interfaces and improving user experience using React
+                ,Angular ,Tailwind css .....
+              </p>
+            </motion.div>
+          </motion.div>
+
           {/* Full Stack Developer */}
           <motion.div variants={itemVariants} className="relative mb-10">
             <motion.span
@@ -75,7 +112,7 @@ const Experience = () => {
                 </h3>
 
                 <span className="text-sm font-medium text-orange-500">
-                  2024 - Present
+                  Jan 2024 - Nov 2026
                 </span>
               </div>
 

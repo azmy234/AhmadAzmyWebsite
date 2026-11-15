@@ -55,6 +55,74 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
+          {/* Marketo */}
+          <motion.div
+            variants={itemVariants}
+            whileHover={{
+              y: -8,
+              scale: 1.02,
+            }}
+            transition={{
+              duration: 0.25,
+            }}
+            className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-colors duration-300 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
+          >
+            {/* Image */}
+            <div className="overflow-hidden">
+              <motion.img
+                src="/marketo.png"
+                alt="Marketo Wholesale E-commerce Platform"
+                className="h-48 w-full object-cover"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+              />
+            </div>
+
+            {/* Content */}
+            <div className="p-5">
+              <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+                Marketo - E-commerce Platform
+              </h3>
+
+              <p className="mb-4 text-sm leading-6 text-gray-500 dark:text-gray-400">
+                A modern wholesale e-commerce platform designed to simplify bulk
+                purchasing, featuring a responsive interface, Arabic and English
+                support, and a smooth shopping experience.
+              </p>
+
+              {/* Technologies */}
+              <div className="mb-5 flex flex-wrap gap-2">
+                {[
+                  "React",
+                  "Tailwind CSS",
+                  "Axios",
+                  "React Router",
+                  "REST API",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-md bg-orange-50 px-3 py-1 text-xs font-medium text-orange-500 dark:bg-orange-500/10 dark:text-orange-400"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Live Project */}
+              <motion.a
+                href="https://marketo-frontend-psi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-fit items-center gap-2 font-medium text-orange-500 transition-colors hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.2 }}
+              >
+                View Live Project
+                <ArrowUpRight size={18} />
+              </motion.a>
+            </div>
+          </motion.div>
+
           {/* Be Smile Dental Center */}
           <motion.div
             variants={itemVariants}
@@ -91,17 +159,14 @@ const Projects = () => {
 
               {/* Technologies */}
               <div className="mb-5 flex flex-wrap gap-2">
-                <span className="rounded-md bg-orange-50 px-3 py-1 text-xs font-medium text-orange-500 dark:bg-orange-500/10 dark:text-orange-400">
-                  Angular
-                </span>
-
-                <span className="rounded-md bg-orange-50 px-3 py-1 text-xs font-medium text-orange-500 dark:bg-orange-500/10 dark:text-orange-400">
-                  Node.js
-                </span>
-
-                <span className="rounded-md bg-orange-50 px-3 py-1 text-xs font-medium text-orange-500 dark:bg-orange-500/10 dark:text-orange-400">
-                  Express
-                </span>
+                {["Angular", "Node.js", "Express"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-md bg-orange-50 px-3 py-1 text-xs font-medium text-orange-500 dark:bg-orange-500/10 dark:text-orange-400"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
 
               {/* Live Project */}
